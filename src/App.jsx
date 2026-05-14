@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 
 const profileImage = "/images/nicolas-marset.jpeg";
+const projectUrl = "https://gestionmarseeeet.netlify.app/";
 
 const technicalFoundation = [
   {
@@ -503,6 +504,7 @@ export default function App() {
                   type="button"
                   onClick={() => scrollToSection("case-study")}
                   className="rounded-xl border border-white/10 px-4 py-2 text-sm text-zinc-300 transition hover:border-white/30 hover:text-white"
+                  href="https://gestionmarseeeet.netlify.app/"
                 >
                   Ver proyecto
                 </button>
@@ -554,6 +556,16 @@ export default function App() {
               órdenes, controlar estados de pago, visualizar resúmenes mensuales
               y centralizar información clave en una única interfaz. El proyecto se encuentra en evolución, con foco actual en mejorar la experiencia visual, la organización interna y la claridad operativa.
             </p>
+            <div className="mt-7">
+  <a
+    href={projectUrl}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex rounded-2xl border border-white/10 bg-white/[0.06] px-5 py-3 text-sm font-medium text-white backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-white/30 hover:bg-white/[0.1]"
+  >
+    Ver sistema en producción →
+  </a>
+</div>
           </div>
         </div>
 
