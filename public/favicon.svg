@@ -1,8 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
   <title id="title">Nicolas Marset</title>
-  <rect width="64" height="64" rx="16" fill="#080808"/>
-  <rect x="4" y="4" width="56" height="56" rx="13" fill="none" stroke="#ffffff" stroke-opacity=".16" stroke-width="2"/>
-  <path d="M16 43V21h5l12 14V21h5v22h-5L21 29v14h-5Z" fill="#ffffff"/>
-  <path d="M41 43V21h5l6 10 6-10h5v22h-5V30l-5 8h-2l-5-8v13h-5Z" fill="#d4d4d8"/>
-  <path d="M16 49h32" stroke="#71717a" stroke-width="2" stroke-linecap="round"/>
+  <g fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="5.5">
+    <path d="M12 48V16l18 32V16"/>
+    <path d="M36 48V16l8 18 8-18v32"/>
+  </g>
 </svg>
