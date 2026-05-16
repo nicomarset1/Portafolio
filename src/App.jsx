@@ -728,6 +728,8 @@ function scrollToSection(id) {
 export default function App() {
   const [language, setLanguage] = useState("es");
   const t = content[language];
+  const cvFile =
+    language === "es" ? "/CV-Nicolas-Marset.pdf" : "/CV-Nicolas-Marset-EN.pdf";
 
   const toggleLanguage = () => {
     setLanguage((current) => (current === "es" ? "en" : "es"));
@@ -788,7 +790,7 @@ export default function App() {
                 <Button>{t.hero.secondaryCta}</Button>
               </button>
 
-              <a href="/CV-Nicolas-Marset.pdf" download>
+              <a href={cvFile} download>
                 <Button>{t.hero.cvCta}</Button>
               </a>
             </div>
@@ -1185,7 +1187,7 @@ export default function App() {
             </a>
 
             <a
-              href="/CV-Nicolas-Marset.pdf"
+              href={cvFile}
               download
               className="group rounded-2xl border border-white/10 bg-white/[0.06] px-5 py-3 text-sm font-medium text-white backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-white/30 hover:bg-white/[0.1]"
             >
