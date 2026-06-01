@@ -796,13 +796,6 @@ export default function App() {
             </p>
 
             <div className="mt-9 flex flex-wrap gap-4">
-              <a href={githubUrl} target="_blank" rel="noopener noreferrer">
-                <Button>
-                  <GithubLogo />
-                  GitHub →
-                </Button>
-              </a>
-
               <button type="button" onClick={() => scrollToSection("proyectos")}>
                 <Button>{t.hero.primaryCta}</Button>
               </button>
