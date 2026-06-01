@@ -796,6 +796,13 @@ export default function App() {
             </p>
 
             <div className="mt-9 flex flex-wrap gap-4">
+              <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+                <Button>
+                  <GithubLogo />
+                  GitHub →
+                </Button>
+              </a>
+
               <button type="button" onClick={() => scrollToSection("proyectos")}>
                 <Button>{t.hero.primaryCta}</Button>
               </button>
@@ -806,13 +813,6 @@ export default function App() {
 
               <a href={cvFile} download>
                 <Button>{t.hero.cvCta}</Button>
-              </a>
-
-              <a href={githubUrl} target="_blank" rel="noopener noreferrer">
-                <Button>
-                  <GithubLogo />
-                  GitHub →
-                </Button>
               </a>
             </div>
           </motion.div>
@@ -1188,6 +1188,18 @@ export default function App() {
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <a
+              href={githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group rounded-2xl border border-white/10 bg-white/[0.06] px-5 py-3 text-sm font-medium text-white backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-white/30 hover:bg-white/[0.1]"
+            >
+              <span className="flex items-center gap-2">
+                <GithubLogo />
+                GitHub →
+              </span>
+            </a>
+
+            <a
               href="https://www.linkedin.com/in/nicolas-marset-67575025a"
               target="_blank"
               rel="noopener noreferrer"
@@ -1213,18 +1225,6 @@ export default function App() {
               className="group rounded-2xl border border-white/10 bg-white/[0.06] px-5 py-3 text-sm font-medium text-white backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-white/30 hover:bg-white/[0.1]"
             >
               <span className="flex items-center gap-2">{t.contact.cv}</span>
-            </a>
-
-            <a
-              href={githubUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group rounded-2xl border border-white/10 bg-white/[0.06] px-5 py-3 text-sm font-medium text-white backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-white/30 hover:bg-white/[0.1]"
-            >
-              <span className="flex items-center gap-2">
-                <GithubLogo />
-                GitHub →
-              </span>
             </a>
           </div>
         </div>
