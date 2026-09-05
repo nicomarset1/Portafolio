@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 const profileImage = "/images/nicolas-marset.jpeg";
-const projectUrl = "https://gestionmarseeeet.netlify.app/";
+const nmsoftwareUrl = "https://nmsoftware.com.ar";
 const githubUrl = "https://github.com/nicomarset1";
 
 const content = {
@@ -10,561 +10,158 @@ const content = {
     nav: [
       { label: "Inicio", target: "inicio" },
       { label: "Sobre mí", target: "sobre-mi" },
-      { label: "Enfoque", target: "enfoque" },
-      { label: "Perfil técnico", target: "perfil-tecnico" },
       { label: "Proyectos", target: "proyectos" },
       { label: "Contacto", target: "contacto" },
     ],
     languageButton: "English",
     languageAria: "Cambiar idioma a inglés",
     profile: {
-      career: "Ingeniería Informática en progreso",
-      orientation: "Ingeniería de Software y Sistemas Digitales",
-      focus: ["Diseño de Sistemas", "Lógica de Producto", "Interfaces Escalables"],
-      mindset: "Analizar. Construir. Optimizar.",
+      career: "Ingeniería Informática (en curso)",
+      orientation: "Automatización e integraciones",
+      focus: ["React", "Next.js", "Automatizaciones"],
+      mindset: "Construyo cosas que se usan de verdad.",
     },
     hero: {
-      eyebrow: "Ingeniería Informática · Software · Sistemas Digitales",
-      degree: "Ingeniería Informática",
+      eyebrow: "STI Global Group · NM Software",
+      degree: "Automation & Integration Specialist",
       cardText:
-        "Perfil orientado a software, sistemas digitales y construcción de soluciones reales.",
+        "Estudio Ingeniería Informática y trabajo en automatización e integraciones. Además, desarrollo software a medida por mi cuenta.",
       text:
-        "Perfil orientado a la ingeniería de software, el análisis de sistemas y la construcción de soluciones digitales funcionales, escalables y pensadas para resolver problemas reales.",
-      primaryCta: "Ver proyectos →",
-      secondaryCta: "Contactarme →",
-      cvCta: "Descargar CV ↓",
+        "Automatizo procesos e integro sistemas en STI Global Group, y por mi cuenta desarrollo software a medida a través de NM Software. Me interesa el software que resuelve problemas reales, no el que solo se ve bien.",
+      primaryCta: "Ver proyectos",
+      secondaryCta: "NM Software",
+      cvCta: "CV",
     },
     about: {
       label: "Sobre mí",
-      title: "Perfil técnico con visión de ingeniería.",
+      title: "Automatizo procesos y construyo software a medida.",
       text:
-        "Me estoy formando en Ingeniería Informática con una mentalidad enfocada en entender problemas, diseñar soluciones y construir sistemas que combinen lógica, estructura, usabilidad y criterio técnico.",
-      cards: [
+        "Estudio Ingeniería Informática y trabajo full-time en automatización e integraciones. En paralelo, desarrollo software a medida para negocios a través de NM Software.",
+      experienceLabel: "Experiencia",
+      educationLabel: "Formación",
+      experience: [
         {
-          icon: "01",
-          title: "Análisis de sistemas",
+          title: "STI Global Group",
+          role: "Automation & Integration Specialist",
           text:
-            "Capacidad para descomponer problemas, identificar procesos clave y transformar necesidades en soluciones digitales concretas.",
+            "Automatizo procesos internos y conecto sistemas y herramientas para que la operación dependa de menos trabajo manual.",
         },
         {
-          icon: "02",
-          title: "Diseño de soluciones",
+          title: "NM Software",
+          role: "Proyectos propios",
           text:
-            "Enfoque en construir productos claros, mantenibles y orientados a usuarios, con estructura técnica y propósito funcional.",
-        },
-        {
-          icon: "03",
-          title: "Criterio técnico",
-          text:
-            "Mentalidad de mejora continua, aprendizaje rápido y adaptación a tecnologías, metodologías y estándares profesionales.",
+            "Desarrollo software a medida, automatizaciones e integraciones para negocios reales.",
+          url: nmsoftwareUrl,
+          linkLabel: "nmsoftware.com.ar",
         },
       ],
-    },
-    approach: {
-      label: "Enfoque de ingeniería",
-      title: "De problema a sistema.",
-      text:
-        "Mi enfoque combina análisis, estructura, implementación y mejora continua. No se trata solamente de hacer una interfaz: se trata de entender cómo debería funcionar una solución digital completa.",
-      items: [
+      education: [
         {
-          number: "01",
-          title: "Análisis del problema",
-          text: "Identificación del problema, contexto, usuarios, procesos y restricciones principales.",
+          title: "Ingeniería Informática",
+          institution: "Formación universitaria en curso",
+          description: "Programación, lógica, sistemas y resolución de problemas.",
         },
         {
-          number: "02",
-          title: "Diseño del sistema",
-          text: "Definición de entidades, módulos, flujos de información y estructura general de la solución.",
-        },
-        {
-          number: "03",
-          title: "Implementación",
-          text: "Construcción progresiva de interfaces, lógica funcional, persistencia y comportamiento del producto.",
-        },
-        {
-          number: "04",
-          title: "Optimización",
-          text: "Mejora de claridad, rendimiento, mantenibilidad, experiencia de usuario y escalabilidad.",
-        },
-      ],
-    },
-    foundation: {
-      label: "Base técnica",
-      title: "Áreas de desarrollo profesional.",
-      text:
-        "Base técnica orientada a crear sistemas digitales, interpretar necesidades, estructurar soluciones y evolucionar hacia entornos de desarrollo profesional.",
-      items: [
-        {
-          name: "Arquitectura de software",
-          detail:
-            "Diseño de estructuras, módulos y flujos lógicos para aplicaciones mantenibles.",
-          tag: "Diseño de sistemas",
-        },
-        {
-          name: "Pensamiento sistémico",
-          detail:
-            "Comprensión de procesos, relaciones entre datos y comportamiento del producto.",
-          tag: "Mentalidad de ingeniería",
-        },
-        {
-          name: "Desarrollo frontend",
-          detail:
-            "Construcción de interfaces funcionales, claras y orientadas a la experiencia de usuario.",
-          tag: "Interfaz de usuario",
-        },
-        {
-          name: "Datos y persistencia",
-          detail:
-            "Organización, almacenamiento y recuperación de información dentro de aplicaciones reales.",
-          tag: "Lógica de datos",
-        },
-        {
-          name: "Despliegue en la nube",
-          detail:
-            "Publicación, configuración y evolución de productos digitales en entornos web.",
-          tag: "Entrega web",
-        },
-        {
-          name: "Ingeniería de producto",
-          detail:
-            "Desarrollo de soluciones pensando en usuario, negocio, operación y escalabilidad.",
-          tag: "Lógica de producto",
+          title: "Desarrollo Front-End React",
+          institution: "Coderhouse · Finalizado",
+          description: "React, componentes, lógica frontend y diseño responsive.",
         },
       ],
     },
     projects: {
-      label: "Trabajo seleccionado",
-      title: "Soluciones digitales aplicadas.",
+      label: "Proyectos",
+      title: "El trabajo real vive en NM Software.",
       text:
-        "Proyectos orientados a demostrar criterio, organización, lógica de producto y capacidad para transformar una necesidad en una herramienta funcional.",
-      viewProject: "Ver proyecto",
-      items: [
-        {
-          title: "Sistema de Gestión",
-          status: "Caso de estudio",
-          description:
-            "Aplicación web en evolución orientada a centralizar procesos operativos de negocios: clientes, órdenes, pagos, seguimiento comercial y análisis mensual. Actualmente trabajando en mejoras de interfaz, estructura de datos y experiencia de usuario.",
-          highlights: [
-            "Gestión operativa",
-            "Flujo de datos",
-            "Panel administrativo",
-            "Producto funcional",
-          ],
-        },
-        {
-          title: "Portfolio Profesional",
-          status: "Identidad digital",
-          description:
-            "Sitio personal diseñado para presentar perfil técnico, criterio visual, enfoque profesional y evolución como futuro ingeniero informático.",
-          highlights: [
-            "Interfaz avanzada",
-            "Animaciones fluidas",
-            "Diseño responsive",
-            "Marca personal",
-          ],
-        },
-      ],
-    },
-    caseStudy: {
-      label: "Caso de estudio",
-      title: "Sistema de Gestión.",
-      text:
-        "Un proyecto en evolución diseñado para resolver una necesidad concreta: centralizar información operativa y mejorar el seguimiento administrativo de negocios.",
-      problemLabel: "Problema",
-      problemTitle:
-        "Información dispersa, procesos manuales y poco control operativo.",
-      problemText:
-        "Muchos negocios administran clientes, trabajos, pagos y seguimiento comercial en lugares separados, lo que dificulta mantener orden, control y claridad sobre el estado real del negocio.",
-      solutionLabel: "Solución",
-      solutionTitle:
-        "Una aplicación web para organizar el flujo administrativo completo.",
-      solutionText:
-        "Estoy desarrollando una herramienta para registrar clientes, administrar órdenes, controlar estados de pago, visualizar resúmenes mensuales y centralizar información clave en una única interfaz. El proyecto se encuentra en evolución, con foco actual en mejorar la experiencia visual, la organización interna y la claridad operativa.",
-      productionCta: "Ver sistema en producción →",
-      cards: [
-        {
-          title: "Entidades principales",
-          text: "Clientes, órdenes, pagos y resumen mensual.",
-        },
-        {
-          title: "Decisión técnica",
-          text: "Persistencia de datos para evitar pérdida de información.",
-        },
-        {
-          title: "Diseño funcional",
-          text: "Interfaz clara para uso operativo cotidiano.",
-        },
-        {
-          title: "Evolución",
-          text: "Base en evolución para futuras mejoras, nuevas funciones y una interfaz más profesional.",
-        },
-      ],
-    },
-    education: {
-      label: "Educación",
-      title: "Formación académica.",
-      text:
-        "Mi perfil técnico se construye sobre una base universitaria en Ingeniería Informática, combinando teoría, lógica, análisis y construcción práctica de soluciones digitales.",
-      primaryLabel: "Formación principal",
-      complementaryLabel: "Formación complementaria",
-      academicAreas: "Áreas académicas",
-      items: [
-        {
-          title: "Ingeniería Informática",
-          institution: "Formación universitaria en curso",
-          description:
-            "Base académica orientada a programación, lógica, matemática, sistemas, tecnologías informáticas y resolución estructurada de problemas.",
-        },
-        {
-          title: "Carrera de Desarrollo Front-End React",
-          institution: "Coderhouse · Finalizado",
-          description:
-            "Formación complementaria orientada al desarrollo de interfaces web modernas, componentes reutilizables, lógica frontend, diseño responsive y construcción de aplicaciones con React.",
-        },
-      ],
-      areas: [
-        "Programación",
-        "Lógica computacional",
-        "Análisis de sistemas",
-        "Matemática aplicada",
-        "Tecnologías informáticas",
-        "Resolución de problemas",
-      ],
-    },
-    current: {
-      label: "Construcción actual",
-      title: "Construcción activa de producto.",
-      text:
-        "Además de formarme académicamente, desarrollo proyectos propios para aplicar lógica, diseño de sistemas, gestión de datos y pensamiento de producto en escenarios reales.",
-      activeProject: "Proyecto activo",
-      technicalDirection: "Dirección técnica",
-      directionTitle: "De práctica a producto.",
-      directionText:
-        "El objetivo no es presentar una versión artificial del producto, sino desarrollar una solución real con estructura, uso práctico, mejora continua y criterio profesional.",
-      steps: [
-        "Mejorar arquitectura interna",
-        "Escalar funcionalidades",
-        "Refinar experiencia de usuario",
-        "Documentar avances y decisiones del proyecto",
-      ],
-      items: [
-        {
-          title: "Sistema de Gestión",
-          description:
-            "Producto web en evolución enfocado en administración de clientes, seguimiento de órdenes, estados de pago y análisis operativo para negocios. Actualmente trabajando en una mejora visual y funcional para acercarlo a una experiencia más profesional.",
-          points: [
-            "Lógica de negocio",
-            "Persistencia de datos",
-            "Flujo administrativo",
-            "Evolución del producto",
-          ],
-        },
-      ],
-    },
-    capabilities: {
-      label: "Competencias",
-      title: "Capacidades que aportan valor real.",
-      text:
-        "Más allá de herramientas puntuales, mi enfoque está en desarrollar habilidades transferibles que una empresa necesita: análisis, adaptación, resolución de problemas y construcción de soluciones.",
-      items: [
-        "Análisis y resolución de problemas",
-        "Diseño de sistemas orientados a usuarios",
-        "Pensamiento lógico aplicado a software",
-        "Organización de procesos y datos",
-        "Criterio visual y experiencia de usuario",
-        "Adaptabilidad técnica y aprendizaje rápido",
-      ],
+        "Ahí muestro los proyectos que desarrollo para negocios reales: tiendas online, paneles de gestión, automatizaciones e integraciones.",
+      cta: "Ver proyectos en NM Software",
     },
     contact: {
-      title: "Abierto a oportunidades y nuevos desafíos.",
-      text:
-        "Busco seguir creciendo en entornos donde pueda aprender, aportar, resolver problemas reales y desarrollarme como futuro ingeniero informático.",
-      linkedin: "LinkedIn →",
-      email: "Email →",
-      cv: "Descargar CV ↓",
+      title: "Hablemos.",
+      text: "Si tenés un proyecto, una idea o una oportunidad, escribime.",
+      linkedin: "LinkedIn",
+      email: "Email",
+      projects: "NM Software",
+      cv: "CV",
     },
-    footer:
-      "© 2026 Nicolas Marset. Portfolio profesional construido con enfoque, criterio técnico y visión de ingeniería.",
+    footer: "© 2026 Nicolas Marset.",
   },
   en: {
     nav: [
       { label: "Home", target: "inicio" },
       { label: "About", target: "sobre-mi" },
-      { label: "Approach", target: "enfoque" },
-      { label: "Technical Profile", target: "perfil-tecnico" },
       { label: "Projects", target: "proyectos" },
       { label: "Contact", target: "contacto" },
     ],
     languageButton: "Español",
     languageAria: "Switch language to Spanish",
     profile: {
-      career: "Computer Engineering in progress",
-      orientation: "Software Engineering and Digital Systems",
-      focus: ["System Design", "Product Logic", "Scalable Interfaces"],
-      mindset: "Analyze. Build. Optimize.",
+      career: "Computer Engineering (in progress)",
+      orientation: "Automation and integrations",
+      focus: ["React", "Next.js", "Automation"],
+      mindset: "I build things that actually get used.",
     },
     hero: {
-      eyebrow: "Computer Engineering · Software · Digital Systems",
-      degree: "Computer Engineering",
+      eyebrow: "STI Global Group · NM Software",
+      degree: "Automation & Integration Specialist",
       cardText:
-        "Profile focused on software, digital systems, and building real solutions.",
+        "I study Computer Engineering and work in automation and integrations. I also build custom software on my own.",
       text:
-        "Profile focused on software engineering, systems analysis, and building functional, scalable digital solutions designed to solve real problems.",
-      primaryCta: "View projects →",
-      secondaryCta: "Contact me →",
-      cvCta: "Download CV ↓",
+        "I automate processes and integrate systems at STI Global Group, and on my own I build custom software through NM Software. I care about software that solves real problems, not just software that looks good.",
+      primaryCta: "View projects",
+      secondaryCta: "NM Software",
+      cvCta: "CV",
     },
     about: {
       label: "About Me",
-      title: "Technical profile with an engineering mindset.",
+      title: "I automate processes and build custom software.",
       text:
-        "I am studying Computer Engineering with a mindset focused on understanding problems, designing solutions, and building systems that combine logic, structure, usability, and technical judgment.",
-      cards: [
+        "I study Computer Engineering and work full-time in automation and integrations. In parallel, I build custom software for businesses through NM Software.",
+      experienceLabel: "Experience",
+      educationLabel: "Education",
+      experience: [
         {
-          icon: "01",
-          title: "Systems analysis",
+          title: "STI Global Group",
+          role: "Automation & Integration Specialist",
           text:
-            "Ability to break down problems, identify key processes, and turn needs into concrete digital solutions.",
+            "I automate internal processes and connect systems and tools so the operation depends on less manual work.",
         },
         {
-          icon: "02",
-          title: "Solution design",
-          text:
-            "Focused on building clear, maintainable, user-oriented products with technical structure and functional purpose.",
-        },
-        {
-          icon: "03",
-          title: "Technical judgment",
-          text:
-            "Continuous improvement mindset, fast learning, and adaptation to technologies, methodologies, and professional standards.",
+          title: "NM Software",
+          role: "Own projects",
+          text: "I build custom software, automations, and integrations for real businesses.",
+          url: nmsoftwareUrl,
+          linkLabel: "nmsoftware.com.ar",
         },
       ],
-    },
-    approach: {
-      label: "Engineering Approach",
-      title: "From problem to system.",
-      text:
-        "My approach combines analysis, structure, implementation, and continuous improvement. It is not only about building an interface: it is about understanding how a complete digital solution should work.",
-      items: [
+      education: [
         {
-          number: "01",
-          title: "Problem Analysis",
-          text: "Identifying the problem, context, users, processes, and main constraints.",
+          title: "Computer Engineering",
+          institution: "University studies in progress",
+          description: "Programming, logic, systems, and problem solving.",
         },
         {
-          number: "02",
-          title: "System Design",
-          text: "Defining entities, modules, information flows, and the general structure of the solution.",
-        },
-        {
-          number: "03",
-          title: "Implementation",
-          text: "Progressive construction of interfaces, functional logic, persistence, and product behavior.",
-        },
-        {
-          number: "04",
-          title: "Optimization",
-          text: "Improving clarity, performance, maintainability, user experience, and scalability.",
-        },
-      ],
-    },
-    foundation: {
-      label: "Technical Foundation",
-      title: "Professional development areas.",
-      text:
-        "Technical foundation focused on creating digital systems, interpreting needs, structuring solutions, and growing toward professional development environments.",
-      items: [
-        {
-          name: "Software Architecture",
-          detail:
-            "Design of structures, modules, and logical flows for maintainable applications.",
-          tag: "System Design",
-        },
-        {
-          name: "Systems Thinking",
-          detail:
-            "Understanding processes, relationships between data, and product behavior.",
-          tag: "Engineering Mindset",
-        },
-        {
-          name: "Frontend Engineering",
-          detail:
-            "Building functional, clear interfaces focused on user experience.",
-          tag: "User Interface",
-        },
-        {
-          name: "Data & Persistence",
-          detail:
-            "Organization, storage, and retrieval of information inside real applications.",
-          tag: "Data Logic",
-        },
-        {
-          name: "Cloud Deployment",
-          detail:
-            "Publishing, configuring, and evolving digital products in web environments.",
-          tag: "Web Delivery",
-        },
-        {
-          name: "Product Engineering",
-          detail:
-            "Developing solutions with the user, business, operations, and scalability in mind.",
-          tag: "Product Logic",
+          title: "Front-End React Development",
+          institution: "Coderhouse · Completed",
+          description: "React, components, frontend logic, and responsive design.",
         },
       ],
     },
     projects: {
-      label: "Selected Work",
-      title: "Applied digital solutions.",
+      label: "Projects",
+      title: "The real work lives on NM Software.",
       text:
-        "Projects aimed at showing judgment, organization, product logic, and the ability to turn a need into a functional tool.",
-      viewProject: "View project",
-      items: [
-        {
-          title: "Management System",
-          status: "Case Study",
-          description:
-            "An evolving web application focused on centralizing business operations: clients, orders, payments, commercial follow-up, and monthly analysis. Currently improving the interface, data structure, and user experience.",
-          highlights: [
-            "Operational management",
-            "Data flow",
-            "Admin dashboard",
-            "Functional product",
-          ],
-        },
-        {
-          title: "Professional Portfolio",
-          status: "Digital Identity",
-          description:
-            "Personal site designed to present technical profile, visual judgment, professional focus, and evolution as a future computer engineer.",
-          highlights: [
-            "Advanced interface",
-            "Fluid animations",
-            "Responsive design",
-            "Personal brand",
-          ],
-        },
-      ],
-    },
-    caseStudy: {
-      label: "Case Study",
-      title: "Management System.",
-      text:
-        "An evolving project designed to solve a concrete need: centralizing operational information and improving administrative tracking for businesses.",
-      problemLabel: "Problem",
-      problemTitle:
-        "Scattered information, manual processes, and limited operational control.",
-      problemText:
-        "Many businesses manage clients, jobs, payments, and commercial follow-up in separate places, making it harder to maintain order, control, and clarity over the real state of the business.",
-      solutionLabel: "Solution",
-      solutionTitle:
-        "A web application to organize the full administrative flow.",
-      solutionText:
-        "I am developing a tool to register clients, manage orders, control payment statuses, view monthly summaries, and centralize key information in a single interface. The project is evolving, with the current focus on improving the visual experience, internal organization, and operational clarity.",
-      productionCta: "View live system →",
-      cards: [
-        {
-          title: "Main entities",
-          text: "Clients, orders, payments, and monthly summary.",
-        },
-        {
-          title: "Technical decision",
-          text: "Data persistence to avoid information loss.",
-        },
-        {
-          title: "Functional design",
-          text: "Clear interface for everyday operational use.",
-        },
-        {
-          title: "Evolution",
-          text: "An evolving base for future improvements, new features, and a more professional interface.",
-        },
-      ],
-    },
-    education: {
-      label: "Education",
-      title: "Academic background.",
-      text:
-        "My technical profile is built on a university foundation in Computer Engineering, combining theory, logic, analysis, and practical construction of digital solutions.",
-      primaryLabel: "Main education",
-      complementaryLabel: "Complementary education",
-      academicAreas: "Academic areas",
-      items: [
-        {
-          title: "Computer Engineering",
-          institution: "University studies in progress",
-          description:
-            "Academic foundation focused on programming, logic, mathematics, systems, information technologies, and structured problem solving.",
-        },
-        {
-          title: "Front-End React Development Program",
-          institution: "Coderhouse · Completed",
-          description:
-            "Complementary education focused on modern web interfaces, reusable components, frontend logic, responsive design, and building applications with React.",
-        },
-      ],
-      areas: [
-        "Programming",
-        "Computational logic",
-        "Systems analysis",
-        "Applied mathematics",
-        "Information technologies",
-        "Problem solving",
-      ],
-    },
-    current: {
-      label: "Currently Building",
-      title: "Active product development.",
-      text:
-        "In addition to my academic training, I build personal projects to apply logic, system design, data management, and product thinking in real scenarios.",
-      activeProject: "Active project",
-      technicalDirection: "Technical direction",
-      directionTitle: "From practice to product.",
-      directionText:
-        "The goal is not to present an artificial version of the product, but to develop a real solution with structure, practical use, continuous improvement, and professional judgment.",
-      steps: [
-        "Improve internal architecture",
-        "Scale functionality",
-        "Refine user experience",
-        "Document progress and project decisions",
-      ],
-      items: [
-        {
-          title: "Management System",
-          description:
-            "An evolving web product focused on client administration, order tracking, payment statuses, and operational analysis for businesses. Currently working on visual and functional improvements to move it closer to a more professional experience.",
-          points: [
-            "Business logic",
-            "Data persistence",
-            "Administrative flow",
-            "Product evolution",
-          ],
-        },
-      ],
-    },
-    capabilities: {
-      label: "Capabilities",
-      title: "Skills that create real value.",
-      text:
-        "Beyond specific tools, my focus is on developing transferable skills companies need: analysis, adaptability, problem solving, and solution building.",
-      items: [
-        "Problem analysis and solving",
-        "User-oriented system design",
-        "Logical thinking applied to software",
-        "Process and data organization",
-        "Visual judgment and user experience",
-        "Technical adaptability and fast learning",
-      ],
+        "That's where I show the projects I build for real businesses: online stores, admin panels, automations, and integrations.",
+      cta: "View projects on NM Software",
     },
     contact: {
-      title: "Open to opportunities and new challenges.",
-      text:
-        "I want to keep growing in environments where I can learn, contribute, solve real problems, and develop as a future computer engineer.",
-      linkedin: "LinkedIn →",
-      email: "Email →",
-      cv: "Download CV ↓",
+      title: "Let's talk.",
+      text: "If you have a project, an idea, or an opportunity, reach out.",
+      linkedin: "LinkedIn",
+      email: "Email",
+      projects: "NM Software",
+      cv: "CV",
     },
-    footer:
-      "© 2026 Nicolas Marset. Professional portfolio built with focus, technical judgment, and an engineering vision.",
+    footer: "© 2026 Nicolas Marset.",
   },
 };
 
@@ -800,9 +397,9 @@ export default function App() {
                 <Button>{t.hero.primaryCta}</Button>
               </button>
 
-              <button type="button" onClick={() => scrollToSection("contacto")}>
+              <a href={nmsoftwareUrl} target="_blank" rel="noopener noreferrer">
                 <Button>{t.hero.secondaryCta}</Button>
-              </button>
+              </a>
 
               <a href={cvFile} download>
                 <Button>{t.hero.cvCta}</Button>
@@ -820,87 +417,58 @@ export default function App() {
       >
         <SectionTitle {...t.about} />
 
-        <div className="grid gap-5 md:grid-cols-3">
-          {t.about.cards.map((item) => (
-            <div
-              key={item.title}
-              className="rounded-3xl border border-white/10 bg-white/[0.035] p-7 backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:bg-white/[0.06]"
-            >
-              <div className="mb-7 flex h-11 w-11 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.06] font-mono text-sm text-zinc-300">
-                {item.icon}
-              </div>
+        <div className="grid gap-10">
+          <div>
+            <p className="mb-4 text-xs uppercase tracking-[0.3em] text-zinc-500">
+              {t.about.experienceLabel}
+            </p>
 
-              <h3 className="text-xl font-semibold text-white">{item.title}</h3>
-
-              <p className="mt-3 leading-7 text-zinc-400">{item.text}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section
-        id="enfoque"
-        className="relative z-10 mx-auto max-w-7xl px-5 py-20 md:px-10"
-      >
-        <SectionTitle
-          label={t.approach.label}
-          title={t.approach.title}
-          text={t.approach.text}
-        />
-
-        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-          {t.approach.items.map((item) => (
-            <div
-              key={item.number}
-              className="rounded-3xl border border-white/10 bg-zinc-950/70 p-6 backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:bg-zinc-900/80"
-            >
-              <div className="mb-8 font-mono text-sm text-zinc-500">
-                {item.number}
-              </div>
-
-              <h3 className="text-xl font-semibold text-white">{item.title}</h3>
-
-              <p className="mt-4 leading-7 text-zinc-400">{item.text}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section
-        id="perfil-tecnico"
-        className="relative z-10 mx-auto max-w-7xl px-5 py-20 md:px-10"
-      >
-        <SectionTitle
-          label={t.foundation.label}
-          title={t.foundation.title}
-          text={t.foundation.text}
-        />
-
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {t.foundation.items.map((tech) => (
-            <div
-              key={tech.name}
-              className="rounded-3xl border border-white/10 bg-zinc-950/70 p-6 backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:bg-zinc-900/80"
-            >
-              <div className="mb-5 flex items-start justify-between gap-5">
-                <div>
-                  <h3 className="text-xl font-semibold text-white">
-                    {tech.name}
-                  </h3>
-
-                  <p className="mt-3 text-sm leading-6 text-zinc-500">
-                    {tech.detail}
+            <div className="grid gap-5 md:grid-cols-2">
+              {t.about.experience.map((item) => (
+                <div
+                  key={item.title}
+                  className="rounded-3xl border border-white/10 bg-white/[0.035] p-7 backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:bg-white/[0.06]"
+                >
+                  <h3 className="text-xl font-semibold text-white">{item.title}</h3>
+                  <p className="mt-1 text-xs uppercase tracking-[0.2em] text-zinc-500">
+                    {item.role}
                   </p>
+                  <p className="mt-4 leading-7 text-zinc-400">{item.text}</p>
+                  {item.url && (
+                    <a
+                      href={item.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-4 inline-block text-sm text-zinc-300 underline decoration-white/20 underline-offset-4 transition hover:text-white"
+                    >
+                      {item.linkLabel} →
+                    </a>
+                  )}
                 </div>
-
-                <span className="font-mono text-xs text-zinc-600">SYS</span>
-              </div>
-
-              <div className="mt-6 inline-flex rounded-full border border-white/10 bg-white/[0.05] px-3 py-1 text-xs text-zinc-400">
-                {tech.tag}
-              </div>
+              ))}
             </div>
-          ))}
+          </div>
+
+          <div>
+            <p className="mb-4 text-xs uppercase tracking-[0.3em] text-zinc-500">
+              {t.about.educationLabel}
+            </p>
+
+            <div className="grid gap-5 md:grid-cols-2">
+              {t.about.education.map((item) => (
+                <div
+                  key={item.title}
+                  className="rounded-3xl border border-white/10 bg-zinc-950/70 p-7 backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:bg-zinc-900/80"
+                >
+                  <h3 className="text-xl font-semibold text-white">{item.title}</h3>
+                  <p className="mt-1 text-xs uppercase tracking-[0.2em] text-zinc-500">
+                    {item.institution}
+                  </p>
+                  <p className="mt-4 leading-7 text-zinc-400">{item.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
@@ -908,257 +476,24 @@ export default function App() {
         id="proyectos"
         className="relative z-10 mx-auto max-w-7xl px-5 py-20 md:px-10"
       >
-        <SectionTitle
-          label={t.projects.label}
-          title={t.projects.title}
-          text={t.projects.text}
-        />
+        <div className="rounded-[2rem] border border-white/10 bg-zinc-950/70 p-8 text-center shadow-2xl shadow-black/50 backdrop-blur-xl md:p-14">
+          <p className="mb-3 text-xs uppercase tracking-[0.35em] text-zinc-500">
+            {t.projects.label}
+          </p>
 
-        <div className="grid gap-6 lg:grid-cols-2">
-          {t.projects.items.map((project) => (
-            <article
-              key={project.title}
-              className="rounded-[2rem] border border-white/10 bg-white/[0.035] p-7 backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:bg-white/[0.06]"
-            >
-              <div className="mb-4 inline-flex rounded-full border border-white/10 px-3 py-1 text-xs text-zinc-400">
-                {project.status}
-              </div>
+          <h2 className="text-3xl font-semibold tracking-tight text-white md:text-5xl">
+            {t.projects.title}
+          </h2>
 
-              <h3 className="text-2xl font-semibold tracking-tight text-white md:text-3xl">
-                {project.title}
-              </h3>
+          <p className="mx-auto mt-5 max-w-2xl leading-7 text-zinc-400">
+            {t.projects.text}
+          </p>
 
-              <p className="mt-5 leading-7 text-zinc-400">
-                {project.description}
-              </p>
-
-              <div className="mt-7 grid grid-cols-2 gap-3">
-                {project.highlights.map((item) => (
-                  <div
-                    key={item}
-                    className="rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-zinc-300"
-                  >
-                    {item}
-                  </div>
-                ))}
-              </div>
-
-              <div className="mt-8 flex gap-3">
-                <button
-                  type="button"
-                  onClick={() => scrollToSection("case-study")}
-                  className="rounded-xl border border-white/10 px-4 py-2 text-sm text-zinc-300 transition hover:border-white/30 hover:text-white"
-                >
-                  {t.projects.viewProject}
-                </button>
-              </div>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section
-        id="case-study"
-        className="relative z-10 mx-auto max-w-7xl px-5 py-20 md:px-10"
-      >
-        <SectionTitle
-          label={t.caseStudy.label}
-          title={t.caseStudy.title}
-          text={t.caseStudy.text}
-        />
-
-        <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
-          <div className="rounded-[2rem] border border-white/10 bg-zinc-950/70 p-7 backdrop-blur-xl">
-            <p className="mb-4 text-xs uppercase tracking-[0.3em] text-zinc-500">
-              {t.caseStudy.problemLabel}
-            </p>
-
-            <h3 className="text-2xl font-semibold text-white">
-              {t.caseStudy.problemTitle}
-            </h3>
-
-            <p className="mt-5 leading-7 text-zinc-400">
-              {t.caseStudy.problemText}
-            </p>
+          <div className="mt-8 flex justify-center">
+            <a href={nmsoftwareUrl} target="_blank" rel="noopener noreferrer">
+              <Button>{t.projects.cta} →</Button>
+            </a>
           </div>
-
-          <div className="rounded-[2rem] border border-white/10 bg-white/[0.035] p-7 backdrop-blur-xl">
-            <p className="mb-4 text-xs uppercase tracking-[0.3em] text-zinc-500">
-              {t.caseStudy.solutionLabel}
-            </p>
-
-            <h3 className="text-2xl font-semibold text-white">
-              {t.caseStudy.solutionTitle}
-            </h3>
-
-            <p className="mt-5 leading-7 text-zinc-400">
-              {t.caseStudy.solutionText}
-            </p>
-            <div className="mt-7">
-              <a
-                href={projectUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex rounded-2xl border border-white/10 bg-white/[0.06] px-5 py-3 text-sm font-medium text-white backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-white/30 hover:bg-white/[0.1]"
-              >
-                {t.caseStudy.productionCta}
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-          {t.caseStudy.cards.map((item) => (
-            <div
-              key={item.title}
-              className="rounded-3xl border border-white/10 bg-white/[0.035] p-6 backdrop-blur-xl"
-            >
-              <h4 className="font-semibold text-white">{item.title}</h4>
-              <p className="mt-3 text-sm leading-6 text-zinc-400">
-                {item.text}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="relative z-10 mx-auto max-w-7xl px-5 py-20 md:px-10">
-        <SectionTitle
-          label={t.education.label}
-          title={t.education.title}
-          text={t.education.text}
-        />
-
-        <div className="grid gap-6">
-          <div className="grid gap-6 lg:grid-cols-2">
-            {t.education.items.map((item, index) => (
-              <div
-                key={item.title}
-                className="rounded-[2rem] border border-white/10 bg-zinc-950/70 p-7 backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:bg-zinc-900/80"
-              >
-                <p className="mb-4 text-xs uppercase tracking-[0.3em] text-zinc-500">
-                  {index === 0
-                    ? t.education.primaryLabel
-                    : t.education.complementaryLabel}
-                </p>
-
-                <h3 className="text-2xl font-semibold text-white">
-                  {item.title}
-                </h3>
-
-                <p className="mt-2 text-sm uppercase tracking-[0.2em] text-zinc-500">
-                  {item.institution}
-                </p>
-
-                <p className="mt-5 leading-7 text-zinc-400">
-                  {item.description}
-                </p>
-              </div>
-            ))}
-          </div>
-
-          <div className="rounded-[2rem] border border-white/10 bg-white/[0.035] p-7 backdrop-blur-xl">
-            <p className="mb-4 text-xs uppercase tracking-[0.3em] text-zinc-500">
-              {t.education.academicAreas}
-            </p>
-
-            <div className="grid gap-3 sm:grid-cols-2">
-              {t.education.areas.map((area) => (
-                <div
-                  key={area}
-                  className="rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-zinc-300"
-                >
-                  {area}
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="relative z-10 mx-auto max-w-7xl px-5 py-20 md:px-10">
-        <SectionTitle
-          label={t.current.label}
-          title={t.current.title}
-          text={t.current.text}
-        />
-
-        <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
-          {t.current.items.map((item) => (
-            <article
-              key={item.title}
-              className="rounded-[2rem] border border-white/10 bg-zinc-950/70 p-7 backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:bg-zinc-900/80"
-            >
-              <p className="mb-4 text-xs uppercase tracking-[0.3em] text-zinc-500">
-                {t.current.activeProject}
-              </p>
-
-              <h3 className="text-2xl font-semibold text-white md:text-3xl">
-                {item.title}
-              </h3>
-
-              <p className="mt-5 leading-7 text-zinc-400">
-                {item.description}
-              </p>
-
-              <div className="mt-7 grid grid-cols-2 gap-3">
-                {item.points.map((point) => (
-                  <div
-                    key={point}
-                    className="rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-zinc-300"
-                  >
-                    {point}
-                  </div>
-                ))}
-              </div>
-            </article>
-          ))}
-
-          <div className="rounded-[2rem] border border-white/10 bg-white/[0.035] p-7 backdrop-blur-xl">
-            <p className="mb-4 text-xs uppercase tracking-[0.3em] text-zinc-500">
-              {t.current.technicalDirection}
-            </p>
-
-            <h3 className="text-2xl font-semibold text-white">
-              {t.current.directionTitle}
-            </h3>
-
-            <p className="mt-5 leading-7 text-zinc-400">
-              {t.current.directionText}
-            </p>
-
-            <div className="mt-7 space-y-3">
-              {t.current.steps.map((step) => (
-                <div
-                  key={step}
-                  className="flex items-center gap-3 rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-zinc-300"
-                >
-                  <span className="text-zinc-500">→</span>
-                  {step}
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="relative z-10 mx-auto max-w-7xl px-5 py-20 md:px-10">
-        <SectionTitle
-          label={t.capabilities.label}
-          title={t.capabilities.title}
-          text={t.capabilities.text}
-        />
-
-        <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
-          {t.capabilities.items.map((item) => (
-            <div
-              key={item}
-              className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.035] p-4 text-zinc-300 transition hover:bg-white/[0.06]"
-            >
-              <span className="text-zinc-500">✦</span>
-              {item}
-            </div>
-          ))}
         </div>
       </section>
 
@@ -1210,6 +545,17 @@ export default function App() {
               className="group rounded-2xl border border-white/10 bg-white/[0.06] px-5 py-3 text-sm font-medium text-white backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-white/30 hover:bg-white/[0.1]"
             >
               <span className="flex items-center gap-2">{t.contact.email}</span>
+            </a>
+
+            <a
+              href={nmsoftwareUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group rounded-2xl border border-white/10 bg-white/[0.06] px-5 py-3 text-sm font-medium text-white backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-white/30 hover:bg-white/[0.1]"
+            >
+              <span className="flex items-center gap-2">
+                {t.contact.projects}
+              </span>
             </a>
 
             <a
