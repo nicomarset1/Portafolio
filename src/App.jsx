@@ -18,12 +18,12 @@ const content = {
     profile: {
       career: "Ingeniería Informática (en curso)",
       orientation: "Automatización e integraciones",
-      focus: ["React", "Next.js", "Automatizaciones"],
+      focus: ["Automatización", "Integraciones", "APIs"],
       mindset: "Construyo cosas que se usan de verdad.",
     },
     hero: {
       eyebrow: "STI Global Group · NM Software",
-      degree: "Automation & Integration Specialist",
+      degree: "Especialista en Automatización e Integraciones",
       cardText:
         "Estudio Ingeniería Informática y trabajo en automatización e integraciones. Además, desarrollo software a medida por mi cuenta.",
       text:
@@ -42,7 +42,7 @@ const content = {
       experience: [
         {
           title: "STI Global Group",
-          role: "Automation & Integration Specialist",
+          role: "Especialista en Automatización e Integraciones",
           text:
             "Automatizo procesos internos y conecto sistemas y herramientas para que la operación dependa de menos trabajo manual.",
         },
@@ -97,7 +97,7 @@ const content = {
     profile: {
       career: "Computer Engineering (in progress)",
       orientation: "Automation and integrations",
-      focus: ["React", "Next.js", "Automation"],
+      focus: ["Automation", "Integrations", "APIs"],
       mindset: "I build things that actually get used.",
     },
     hero: {
