@@ -464,22 +464,22 @@ export default function App() {
           <img
             src="/projects-bg/taller.png"
             alt=""
-            className="absolute -left-16 top-2 w-72 rotate-[-6deg] rounded-3xl object-cover opacity-25 blur-2xl md:w-96"
+            className="absolute -left-10 top-[-8%] w-80 rotate-[-8deg] rounded-3xl object-cover opacity-50 blur-lg md:w-[28rem]"
           />
           <img
             src="/projects-bg/vet.png"
             alt=""
-            className="absolute -right-16 top-[-4%] w-72 rotate-[7deg] rounded-3xl object-cover opacity-25 blur-2xl md:w-96"
+            className="absolute -right-10 top-[-4%] w-80 rotate-[9deg] rounded-3xl object-cover opacity-50 blur-lg md:w-[28rem]"
           />
           <img
             src="/projects-bg/radio.png"
             alt=""
-            className="absolute bottom-[-12%] left-1/3 w-64 rotate-[4deg] rounded-3xl object-cover opacity-20 blur-2xl md:w-80"
+            className="absolute bottom-[-18%] left-1/2 w-72 -translate-x-1/2 rotate-[3deg] rounded-3xl object-cover opacity-45 blur-lg md:w-96"
           />
         </div>
 
         <div className="relative mx-auto max-w-7xl px-5 md:px-10">
-          <div className="rounded-[2rem] border border-white/10 bg-zinc-950/70 p-8 text-center shadow-2xl shadow-black/50 backdrop-blur-xl md:p-14">
+          <div className="rounded-[2rem] border border-white/10 bg-zinc-950/45 p-8 text-center shadow-2xl shadow-black/50 backdrop-blur-2xl md:p-14">
             <p className="mb-3 text-xs uppercase tracking-[0.35em] text-zinc-500">
               {t.projects.label}
             </p>
