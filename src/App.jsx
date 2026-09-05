@@ -459,27 +459,44 @@ export default function App() {
         </div>
       </section>
 
-      <section
-        id="proyectos"
-        className="relative z-10 mx-auto max-w-7xl px-5 py-20 md:px-10"
-      >
-        <div className="rounded-[2rem] border border-white/10 bg-zinc-950/70 p-8 text-center shadow-2xl shadow-black/50 backdrop-blur-xl md:p-14">
-          <p className="mb-3 text-xs uppercase tracking-[0.35em] text-zinc-500">
-            {t.projects.label}
-          </p>
+      <section id="proyectos" className="relative z-10 overflow-hidden py-20">
+        <div className="pointer-events-none absolute inset-0" aria-hidden="true">
+          <img
+            src="/projects-bg/taller.png"
+            alt=""
+            className="absolute -left-16 top-2 w-72 rotate-[-6deg] rounded-3xl object-cover opacity-25 blur-2xl md:w-96"
+          />
+          <img
+            src="/projects-bg/vet.png"
+            alt=""
+            className="absolute -right-16 top-[-4%] w-72 rotate-[7deg] rounded-3xl object-cover opacity-25 blur-2xl md:w-96"
+          />
+          <img
+            src="/projects-bg/radio.png"
+            alt=""
+            className="absolute bottom-[-12%] left-1/3 w-64 rotate-[4deg] rounded-3xl object-cover opacity-20 blur-2xl md:w-80"
+          />
+        </div>
 
-          <h2 className="text-3xl font-semibold tracking-tight text-white md:text-5xl">
-            {t.projects.title}
-          </h2>
+        <div className="relative mx-auto max-w-7xl px-5 md:px-10">
+          <div className="rounded-[2rem] border border-white/10 bg-zinc-950/70 p-8 text-center shadow-2xl shadow-black/50 backdrop-blur-xl md:p-14">
+            <p className="mb-3 text-xs uppercase tracking-[0.35em] text-zinc-500">
+              {t.projects.label}
+            </p>
 
-          <p className="mx-auto mt-5 max-w-2xl leading-7 text-zinc-400">
-            {t.projects.text}
-          </p>
+            <h2 className="text-3xl font-semibold tracking-tight text-white md:text-5xl">
+              {t.projects.title}
+            </h2>
 
-          <div className="mt-8 flex justify-center">
-            <a href={nmsoftwareUrl} target="_blank" rel="noopener noreferrer">
-              <Button>{t.projects.cta} →</Button>
-            </a>
+            <p className="mx-auto mt-5 max-w-2xl leading-7 text-zinc-400">
+              {t.projects.text}
+            </p>
+
+            <div className="mt-8 flex justify-center">
+              <a href={nmsoftwareUrl} target="_blank" rel="noopener noreferrer">
+                <Button>{t.projects.cta} →</Button>
+              </a>
+            </div>
           </div>
         </div>
       </section>
