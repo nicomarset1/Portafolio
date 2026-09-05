@@ -460,7 +460,16 @@ export default function App() {
       </section>
 
       <section id="proyectos" className="relative z-10 overflow-hidden py-20">
-        <div className="pointer-events-none absolute inset-0" aria-hidden="true">
+        <div
+          className="pointer-events-none absolute inset-0"
+          aria-hidden="true"
+          style={{
+            maskImage:
+              "linear-gradient(to bottom, transparent, black 20%, black 80%, transparent)",
+            WebkitMaskImage:
+              "linear-gradient(to bottom, transparent, black 20%, black 80%, transparent)",
+          }}
+        >
           <img
             src="/projects-bg/taller.png"
             alt=""
